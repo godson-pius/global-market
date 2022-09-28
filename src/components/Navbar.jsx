@@ -102,7 +102,9 @@ const Navbar = () => {
 
           <div className="third flex gap-2 md:gap-5">
             <div className="flex gap-2 items-center text-slate-700 font-black hover:text-orange-400">
-              <FiUser className="" size={16} />
+              <Link to='/sign-in'>
+                <FiUser className="" size={16} />
+              </Link>
               <Link
                 className="hidden md:block text-sm hover:text-bold duration-500 hover:font-extrabold"
                 to="/sign-in"
