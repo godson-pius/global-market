@@ -19,27 +19,27 @@ import react from "../assets/react.svg";
 const Navbar = () => {
   return (
     <>
-      <div className="w-full flex flex-col gap-8">
+      <div className={`w-full flex flex-col gap-8 ${window.location.pathname == '/vendor-dashboard' || window.location.pathname == '/vendor-products' || window.location.pathname == '/vendor-inbox' || window.location.pathname == '/vendor-ticket' || window.location.pathname == '/vendor-settings' ? 'hidden' : null}`}>
         <div className="w-full hidden md:flex justify-between bg-orange-400 py-3 px-12">
           {/* First one */}
-          <div className="flex gap-5">
+          <div className="flex gap-1 lg:gap-5">
             <div className="flex gap-2 items-center text-white font-black hover:text-orange-900">
               <FiExternalLink size={16} />
-              <Link className="text-sm hover:text-bold duration-500" to="/vendor">
+              <Link className=" text-xs lg:text-sm hover:text-bold duration-500" to="/vendor">
                 Sell on Global Market
               </Link>
             </div>{" "}
             <span className="text-white">|</span>
             <div className="flex gap-2 items-center text-white font-black hover:text-orange-900">
               <FiTruck size={16} />
-              <Link className="text-sm hover:text-bold duration-500" to="/">
+              <Link className=" text-xs lg:text-sm hover:text-bold duration-500" to="/">
                 Track order
               </Link>
             </div>{" "}
             <span className="text-white">|</span>
             <div className="flex gap-2 items-center text-white font-black hover:text-orange-900">
               <FiDownloadCloud size={16} />
-              <Link className="text-sm hover:text-bold duration-500" to="/">
+              <Link className=" text-xs lg:text-sm hover:text-bold duration-500" to="/">
                 Download App
               </Link>
             </div>{" "}
@@ -64,14 +64,14 @@ const Navbar = () => {
           <div className="flex gap-5">
             <div className="flex gap-2 items-center text-white font-black hover:text-orange-900">
               <FiUserPlus size={16} />
-              <Link className="text-sm hover:text-bold duration-500" to="/sign-up">
+              <Link className="text-xs lg:text-sm hover:text-bold duration-500" to="/vendor-signup">
                 Sign Up
               </Link>
             </div>{" "}
             <span className="text-white">|</span>
             <div className="flex gap-2 items-center text-white font-black hover:text-orange-900">
               <FiLogIn size={16} />
-              <Link className="text-sm hover:text-bold duration-500" to="/sign-in">
+              <Link className="text-xs lg:text-sm hover:text-bold duration-500" to="/vendor-signin">
                 Sign In
               </Link>
             </div>
@@ -88,7 +88,7 @@ const Navbar = () => {
           <div className="second">
             <div className="flex">
               <input
-                className="rounded-l-full md:w-[48rem] text-orange-800 p-1 bg-gray-100 text-sm px-5 outline-none duration-300 focus:ring-1 focus:ring-orange-400"
+                className="rounded-l-full w-96 lg:w-[48rem] text-orange-800 p-1 bg-gray-100 text-sm px-5 outline-none duration-300 focus:ring-1 focus:ring-orange-400"
                 type="text"
                 name="query"
                 id="query"
@@ -108,13 +108,13 @@ const Navbar = () => {
               <Link
                 className="hidden md:block text-sm hover:text-bold duration-500 hover:font-extrabold"
                 to="/sign-in"
-              >
+             >
                 Account
               </Link>
             </div>{" "}
             <span className="hidden md:block text-slate-700">|</span>
             <div className="flex md:gap-5 items-center text-slate-700 font-black">
-              <Link to="/" className="duration-300 hover:text-orange-900">
+              <Link to="/cart" className="duration-300 hover:text-orange-900">
                 <FiShoppingCart size={16} className="font-bold hover:text-orange-900 duration-500" />
               </Link>
               <Link

@@ -10,7 +10,7 @@ const TopSelling = () => {
             <div className="w-full flex flex-col bg-white p-10 rounded shadow-2xl">
                 <div className='flex gap-4 items-center justify-between'>
                     <h1 className='text-lg'>New Collections</h1>
-                    <Link to='/' className='text-sm text-orange-400 items-center flex gap-1 hover:text-orange-700 duration-500'>
+                    <Link to='/shop' className='text-sm text-orange-400 items-center flex gap-1 hover:text-orange-700 duration-500'>
                         View all
                         <FiArrowRight />
                     </Link>
@@ -22,37 +22,37 @@ const TopSelling = () => {
                 <h2 className='mt-5 text-gray-600 text-sm'>Products</h2>
 
                 <div className='w-full flex mt-3 justify-between'>
-                    <div className='ring-1 ring-gray-300 p-7 flex flex-col items-center'>
+                    <div className='ring-2 ring-orange-300 p-7 flex flex-col items-center rounded hover:translate-y-1 duration-500 hover:shadow-lg'>
                         <img className='mb-4' src={ react } alt="" />
-                        <h1 className='text-lg font-extrabold'>React Website</h1>
+                        <Link to="/" className='text-md font-extrabold hover:text-orange-400 duration-500'>React Website</Link>
                         <span>⭐️⭐️⭐️⭐️</span>
                         <span className='font-extrabold text-md text-orange-500'>₦150,000</span>
                     </div>
 
-                    <div className='ring-1 ring-gray-300 p-7 flex flex-col items-center'>
+                    <div className='ring-2 ring-orange-300 p-7 flex flex-col items-center rounded hover:translate-y-1 duration-500 hover:shadow-lg'>
                         <img className='mb-4' src={ react } alt="" />
-                        <h1 className='text-lg font-extrabold'>React Website</h1>
+                        <Link to="/" className='text-md font-extrabold hover:text-orange-400 duration-500'>React Website</Link>
                         <span>⭐️⭐️⭐️⭐️</span>
                         <span className='font-extrabold text-md text-orange-500'>₦150,000</span>
                     </div>
 
-                    <div className='ring-1 ring-gray-300 p-7 flex flex-col items-center'>
+                    <div className='ring-2 ring-orange-300 p-7 flex flex-col items-center rounded hover:translate-y-1 duration-500 hover:shadow-lg'>
                         <img className='mb-4' src={ react } alt="" />
-                        <h1 className='text-lg font-extrabold'>React Website</h1>
+                        <Link to="/" className='text-md font-extrabold hover:text-orange-400 duration-500'>React Website</Link>
                         <span>⭐️⭐️⭐️⭐️</span>
                         <span className='font-extrabold text-md text-orange-500'>₦150,000</span>
                     </div>
 
-                    <div className='ring-1 ring-gray-300 p-7 flex flex-col items-center'>
+                    <div className='ring-2 ring-orange-300 p-7 flex flex-col items-center rounded hover:translate-y-1 duration-500 hover:shadow-lg'>
                         <img className='mb-4' src={ react } alt="" />
-                        <h1 className='text-lg font-extrabold'>React Website</h1>
+                        <Link to="/" className='text-md font-extrabold hover:text-orange-400 duration-500'>React Website</Link>
                         <span>⭐️⭐️⭐️⭐️</span>
                         <span className='font-extrabold text-md text-orange-500'>₦150,000</span>
                     </div>
 
-                    <div className='ring-1 ring-gray-300 p-7 flex flex-col items-center'>
+                    <div className='ring-2 ring-orange-300 p-7 flex flex-col items-center rounded hover:translate-y-1 duration-500 hover:shadow-lg'>
                         <img className='mb-4' src={ react } alt="" />
-                        <h1 className='text-lg font-extrabold'>React Website</h1>
+                        <Link to="/" className='text-md font-extrabold hover:text-orange-400 duration-500'>React Website</Link>
                         <span>⭐️⭐️⭐️⭐️</span>
                         <span className='font-extrabold text-md text-orange-500'>₦150,000</span>
                     </div>

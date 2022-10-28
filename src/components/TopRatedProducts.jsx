@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 import react from "../assets/react.svg";
 
 const TopRatedProducts = () => {
@@ -9,7 +10,7 @@ const TopRatedProducts = () => {
         <div className="flex items-center mt-4 gap-2">
           <img src={react} alt="" />
           <div className="flex flex-col">
-            <h3 className="text-sm">Television HDR Smart</h3>
+            <Link className="text-sm hover:text-orange-400 duration-500">Television HDR Smart</Link>
             <span className="font-extrabold text-md text-orange-500">
               ₦150,000
             </span>
@@ -18,7 +19,7 @@ const TopRatedProducts = () => {
         <div className="flex items-center mt-4 gap-2">
           <img src={react} alt="" />
           <div className="flex flex-col">
-            <h3 className="text-sm">Television HDR Smart</h3>
+            <Link className="text-sm hover:text-orange-400 duration-500">Television HDR Smart</Link>
             <span className="font-extrabold text-md text-orange-500">
               ₦150,000
             </span>
@@ -27,7 +28,7 @@ const TopRatedProducts = () => {
         <div className="flex items-center mt-4 gap-2">
           <img src={react} alt="" />
           <div className="flex flex-col">
-            <h3 className="text-sm">Television HDR Smart</h3>
+            <Link className="text-sm hover:text-orange-400 duration-500">Television HDR Smart</Link>
             <span className="font-extrabold text-md text-orange-500">
               ₦150,000
             </span>
@@ -36,7 +37,7 @@ const TopRatedProducts = () => {
         <div className="flex items-center mt-4 gap-2">
           <img src={react} alt="" />
           <div className="flex flex-col">
-            <h3 className="text-sm">Television HDR Smart</h3>
+            <Link className="text-sm hover:text-orange-400 duration-500">Television HDR Smart</Link>
             <span className="font-extrabold text-md text-orange-500">
               ₦150,000
             </span>

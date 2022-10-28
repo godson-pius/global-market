@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 // import Axios from 'axios';
 import {ToastContainer, toast} from 'react-toastify'
+import { Link } from 'react-router-dom'
 import 'react-toastify/dist/ReactToastify.css'
 
 function Newsletter() {
@@ -51,8 +52,8 @@ function Newsletter() {
                                 {text}
                             </button>
                         </div>
-                        <p className='text-gray-300 text-sm'>We care about the protection of your data. <span
-                            className='text-orange-400'>Read our privacy policy</span></p>
+                        <Link className='text-gray-300 text-sm'>We care about the protection of your data. <span
+                            className='text-orange-400'>Read our privacy policy</span></Link>
                     </div>
                 </div>
             </div> 

@@ -12,3 +12,9 @@
     width: 50%;
     margin: 0 auto;
 }
+
+.vendor__active {
+    background-color: #f4dbad;
+    color: #9c6706 !important;
+    padding: 0.75rem;
+}
